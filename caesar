@@ -1,0 +1,17 @@
+#!/usr/local/bin/python3.7
+
+text="vgefmsaapaxpomqemdoubtqdxoaxypeo"
+answer =[]
+count = 1
+while count<27:
+	for i in text:
+		position=ord(i)+count
+		if position > ord('z'):
+                	position -= 26
+		elif position < ord('a'):
+                     	position += 26
+		answer.append(chr(position))
+	print(str(count) +" "+ "".join(answer))
+	answer =[]
+	count = count + 1
+
