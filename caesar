@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3.7
 
-text="vgefmsaapaxpomqemdoubtqdxoaxypeo"
+text=inpt("insert caesar script to decrypt: ")
 answer =[]
 count = 1
 while count<27:
